@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var taskManager: TaskManager
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TodoList()
     }
 }
 

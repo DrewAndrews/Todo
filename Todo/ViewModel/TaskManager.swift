@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class TaskManager: ObservableObject {
     @Published var tasks: [Task] = []
@@ -21,12 +22,19 @@ final class TaskManager: ObservableObject {
         Task(title: "Relax", description: "Fall on the couch and relax:)", color: .green)
     ]
     
-    func addTask(_ task: Task) {
+    func addTask(title: String, description: String, color: Color) {
+        let task = Task(title: title, description: description, color: color)
         tasks.append(task)
     }
     
     func removeTask(_ task: Task) {
         let taskIndex = tasks.firstIndex { $0.id == task.id }!
         tasks.remove(at: taskIndex)
+    }
+    
+    func checkTask(_ task: Task) {
+        let taskIndex = tasks.firstIndex { $0.id == task.id }!
+        tasks.remove(at: taskIndex)
+        tasks.insert(task, at: tasks.count)
     }
 }

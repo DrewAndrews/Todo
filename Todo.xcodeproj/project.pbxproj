@@ -13,10 +13,12 @@
 		6872107726BA68AB0044A8E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6872107626BA68AB0044A8E9 /* Preview Assets.xcassets */; };
 		6872108126BA6AFE0044A8E9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872108026BA6AFE0044A8E9 /* Task.swift */; };
 		6872108626BA6B710044A8E9 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872108526BA6B710044A8E9 /* TaskManager.swift */; };
-		6872108B26BA6C9C0044A8E9 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872108A26BA6C9C0044A8E9 /* TaskList.swift */; };
 		6872108E26BA6CE60044A8E9 /* TaskMiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872108D26BA6CE60044A8E9 /* TaskMiniView.swift */; };
 		6872109326BA73990044A8E9 /* CheckmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872109226BA73990044A8E9 /* CheckmarkButton.swift */; };
 		6872109726BA73B50044A8E9 /* TitleAndDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872109626BA73B50044A8E9 /* TitleAndDescriptionView.swift */; };
+		6872109B26BA75CC0044A8E9 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872109A26BA75CC0044A8E9 /* TodoList.swift */; };
+		6872109F26BA85E30044A8E9 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6872109E26BA85E30044A8E9 /* CreateTaskView.swift */; };
+		687210A326BAECD60044A8E9 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687210A226BAECD60044A8E9 /* CircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +30,12 @@
 		6872107826BA68AB0044A8E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6872108026BA6AFE0044A8E9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		6872108526BA6B710044A8E9 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
-		6872108A26BA6C9C0044A8E9 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		6872108D26BA6CE60044A8E9 /* TaskMiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMiniView.swift; sourceTree = "<group>"; };
 		6872109226BA73990044A8E9 /* CheckmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkButton.swift; sourceTree = "<group>"; };
 		6872109626BA73B50044A8E9 /* TitleAndDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndDescriptionView.swift; sourceTree = "<group>"; };
+		6872109A26BA75CC0044A8E9 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		6872109E26BA85E30044A8E9 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		687210A226BAECD60044A8E9 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				6872109126BA73860044A8E9 /* TaskMini */,
-				6872108A26BA6C9C0044A8E9 /* TaskList.swift */,
+				6872109A26BA75CC0044A8E9 /* TodoList.swift */,
+				6872109E26BA85E30044A8E9 /* CreateTaskView.swift */,
+				687210A226BAECD60044A8E9 /* CircleButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,10 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6872109B26BA75CC0044A8E9 /* TodoList.swift in Sources */,
+				6872109F26BA85E30044A8E9 /* CreateTaskView.swift in Sources */,
 				6872107226BA68AA0044A8E9 /* ContentView.swift in Sources */,
 				6872108E26BA6CE60044A8E9 /* TaskMiniView.swift in Sources */,
-				6872108B26BA6C9C0044A8E9 /* TaskList.swift in Sources */,
 				6872109326BA73990044A8E9 /* CheckmarkButton.swift in Sources */,
+				687210A326BAECD60044A8E9 /* CircleButton.swift in Sources */,
 				6872109726BA73B50044A8E9 /* TitleAndDescriptionView.swift in Sources */,
 				6872108126BA6AFE0044A8E9 /* Task.swift in Sources */,
 				6872108626BA6B710044A8E9 /* TaskManager.swift in Sources */,

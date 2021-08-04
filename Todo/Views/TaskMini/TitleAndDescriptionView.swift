@@ -11,7 +11,7 @@ struct TitleAndDescriptionView: View {
     var task: Task
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(task.title)
                 .font(.title)
                 .bold()

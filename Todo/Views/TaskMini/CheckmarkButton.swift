@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct CheckmarkButton: View {
+    var task: Task
+    
+    @State private var isDone = false
+    @EnvironmentObject var taskManager: TaskManager
+    
     var body: some View {
-        Button(action: {}) {
-            Image(systemName: "checkmark.circle.fill")
+        Button(action: {
+            withAnimation {
+                isDone ? nil : taskManager.checkTask(task)
+                self.isDone.toggle()
+            }
+        }) {
+            Image(systemName: isDone ? "checkmark.circle.fill" : "checkmark.circle")
                 .resizable()
                 .foregroundColor(.white)
                 .clipShape(Circle())
-                .overlay(Circle().stroke())
                 .frame(width: 30, height: 30)
         }
         .padding()
@@ -23,6 +32,6 @@ struct CheckmarkButton: View {
 
 struct CheckmarkButton_Previews: PreviewProvider {
     static var previews: some View {
-        CheckmarkButton()
+        CheckmarkButton(task: TaskManager.example)
     }
 }

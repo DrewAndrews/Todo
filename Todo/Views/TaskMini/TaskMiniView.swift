@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct TaskDetail: View {
+struct TaskMiniView: View {
     var task: Task
     
     var body: some View {
         HStack {
             TitleAndDescriptionView(task: task)
             Spacer()
-            CheckmarkButton()
+            CheckmarkButton(task: task)
         }
-        .frame(width: 280, height: 100, alignment: .leading)
+        .frame(width: 325, height: 70, alignment: .leading)
         .padding()
         .background(RoundedRectangle(cornerRadius: 22).fill(task.color))
     }
@@ -24,6 +24,6 @@ struct TaskDetail: View {
 
 struct TaskDetail_Previews: PreviewProvider {
     static var previews: some View {
-        TaskDetail(task: TaskManager.example)
+        TaskMiniView(task: TaskManager.example)
     }
 }
