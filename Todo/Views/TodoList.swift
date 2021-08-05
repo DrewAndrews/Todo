@@ -17,8 +17,10 @@ struct TodoList: View {
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(taskManager.tasks) { task in
                     TaskMiniView(task: task)
-                        .onLongPressGesture {
-                            taskManager.removeTask(task)
+                        .onLongPressGesture(minimumDuration: 1.5) {
+                            withAnimation {
+                                taskManager.removeTask(task)
+                            }
                         }
                 }
             }
